@@ -1,0 +1,42 @@
+{
+  "backbone": "EfficientNetB0",
+  "img_size": 256,
+  "preprocess_mode": "ben",
+  "class_names": [
+    "No DR",
+    "Mild",
+    "Moderate",
+    "Severe",
+    "Proliferative"
+  ],
+  "head_lr": 0.001,
+  "dropout": 0.4,
+  "ft_lr": 3e-05,
+  "ft_unfreeze_layers": 80,
+  "seed": 42,
+  "test_metrics": {
+    "accuracy": 0.8415300546448088,
+    "macro precision": 0.7708936566079423,
+    "macro recall": 0.6538598703765308,
+    "macro F1": 0.6756492254608157,
+    "QWK": 0.8866287152620257
+  },
+  "binary_tasks": {
+    "dr_present": {
+      "accuracy": 0.9726775956284153,
+      "sensitivity (recall)": 0.9880239520958084,
+      "specificity": 0.9597989949748744,
+      "precision": 0.953757225433526,
+      "F1": 0.9705882352941176,
+      "AUC": 0.997833478771101
+    },
+    "referable_dr": {
+      "accuracy": 0.9289617486338798,
+      "sensitivity (recall)": 0.8832116788321168,
+      "specificity": 0.9563318777292577,
+      "precision": 0.9236641221374046,
+      "F1": 0.9029850746268657,
+      "AUC": 0.9836802345966277
+    }
+  }
+}

@@ -1,0 +1,7 @@
+# secrets and generated files: never commit these
+.env
+chat_images/
+__pycache__/
+*.pyc
+.venv/
+model/*.keras

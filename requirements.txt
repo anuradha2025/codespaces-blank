@@ -1,0 +1,13 @@
+# Versions match the Colab environment the model was trained/saved in (TensorFlow 2.20, Keras 3.13).
+# If "tensorflow-cpu==2.20.0" cannot be found for your Python, use "tensorflow==2.20.0" instead.
+tensorflow-cpu==2.20.0
+keras==3.13.2
+numpy
+opencv-python-headless
+pillow
+pandas
+gradio>=5,<7
+# streamlit>=1.45      # only for the alternative chat-page UI in app_streamlit.py
+anthropic
+# Needed for the free providers (Groq / Gemini / OpenRouter ...) and for Azure OpenAI:
+openai
